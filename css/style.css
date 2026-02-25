@@ -106,6 +106,10 @@ img {
 
 /** HEADER__BARRA NAVEGACION **/
 
+.barra{
+    padding-top: 4rem;
+}
+
 @media (min-width: 768px) {
     .barra {
         display: flex;
@@ -214,4 +218,12 @@ font-weight: normal;
 .widget-curso__label,
 .widget-curso__info{
     font-size: 2rem;
+}
+
+/** FOOTER **/
+
+.footer{
+    background-color: var(--negro);
+    margin-top: 4rem;
+    padding-bottom: 3rem;
 }
