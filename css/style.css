@@ -84,8 +84,15 @@ img {
 
 /** HEADER **/
 
-.header {
+.webp .header {
+    background-image: url(../img/banner.webp);
+}
+
+.no-webp .header {
     background-image: url(../img/banner.jpg);
+}
+
+.header {
     height: 60rem;
     background-size: cover;
     background-repeat: no-repeat;
@@ -255,27 +262,27 @@ img {
 
 /** CURSOS **/
 
-.curso{
+.curso {
     padding: 3rem 0;
     border-bottom: 1px solid var(--gris);
 }
 
-.curso:last-of-type{
+.curso:last-of-type {
     border-bottom: none;
     padding: 0;
 }
 
 @media (min-width: 768px) {
-   .curso{
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 3rem;
-   }
+    .curso {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 3rem;
+    }
 }
 
 /** CONTACTO **/
 
-.contacto-bg{
+.contacto-bg {
     background-image: url(../img/contacto.jpg);
     height: 40rem;
     background-size: cover;
@@ -284,27 +291,31 @@ img {
 
 /** FORMULARIO **/
 
-.formulario{
+.formulario {
     background-color: var(--blanco);
     margin: -5rem auto 0 auto;
     width: 95%;
     padding: 5rem;
 }
-.campo{
+
+.campo {
     display: flex;
     margin-bottom: 2rem;
     gap: 2rem;
 
 }
-.campo__label{
+
+.campo__label {
     flex: 0 0 9rem;
     text-align: right;
 }
-.campo__field{
+
+.campo__field {
     flex: 1;
     border: 1px solid var(--gris);
 }
-.campo__field--textarea{
+
+.campo__field--textarea {
     height: 20rem;
 
 }
